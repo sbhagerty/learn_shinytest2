@@ -4,8 +4,11 @@ on:
     branches: [main]
 
 jobs:
+  test-app:
+    uses: ./.github/workflows/test-actions.yaml
   connect-publish:
     name: connect-publish
+    needs: [test-app]
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2

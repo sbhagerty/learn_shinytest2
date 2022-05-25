@@ -1,7 +1,7 @@
 {
   "input": {
     "api": "asdsdsd",
-    "end_date": "2022-05-18",
+    "end_date": "2022-05-25",
     "seriousness": "0",
     "start_date": "2004-01-01",
     "submit": 0
@@ -24,16 +24,13 @@
         "validation"
       ]
     },
-    "tble": {
-      "message": "",
-      "call": "NULL",
-      "type": [
-        "shiny.silent.error",
-        "validation"
-      ]
-    }
+    "tble": [
+      "",
+      "NULL",
+      "c(\"shiny.silent.error\", \"validation\")"
+    ]
   },
   "export": {
-
+    "api_data": null
   }
 }
